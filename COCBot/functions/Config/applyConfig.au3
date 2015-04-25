@@ -124,6 +124,13 @@ Func applyConfig() ;Applies the data from config to the controls in GUI
 
 	chkDeadActivate()
 	chkAnyActivate()
+	;search2 settings
+	If $chkxbowlevel = 1 Then
+		GUICtrlSetState($chkxbowlvl, $GUI_CHECKED)
+	Else
+		GUICtrlSetState($chkxbowlvl, $GUI_UNCHECKED)
+	EndIf
+	_GUICtrlComboBox_SetCurSel($xbowlvl, $xbowlevel)
 
 	;Attack Settings-------------------------------------------------------------------------
 	_GUICtrlComboBox_SetCurSel($cmbDeadDeploy, $deployDeadSettings)

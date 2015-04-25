@@ -93,6 +93,10 @@ Global $THaddtiles, $THside, $THi
 
 Global $speedBump = 0
 
+;search2 settings
+Global $chkxbowlevel ,$xbowlevel
+
+
 ;Troop types
 Global Enum $eBarbarian, $eArcher, $eGiant, $eGoblin, $eWallbreaker, $eMinion, $eHog, $eValkyrie, $eKing, $eQueen, $eCastle, $eLSpell
 

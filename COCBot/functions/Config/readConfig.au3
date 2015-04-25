@@ -34,6 +34,11 @@ Func readConfig() ;Reads config and sets it to the variables
 		$AlertBaseFound = IniRead($config, "search", "AlertBaseFound", "0")
 		$TakeLootSnapShot = IniRead($config, "search", "TakeLootSnapShot", "0")
 		$TakeAllTownSnapShot = IniRead($config, "search", "TakeAllTownSnapShot", "0")
+		
+		;search2---------------------------------------------------------------------------------
+		$chkxbowlevel = IniRead($config, "search2", "chkxbowlvl", "0")
+		$xbowlevel = IniRead($config, "search2", "xbowlvl", "0")
+		
 		;Attack Settings-------------------------------------------------------------------------
 		$deployDeadSettings = IniRead($config, "attack", "deploy-dead", "0")
 		$icmbDeadAlgorithm = IniRead($config, "attack", "algorithm-dead", "0")

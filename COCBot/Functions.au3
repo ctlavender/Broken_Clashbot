@@ -18,6 +18,7 @@
 #include "functions\Image Search\checkTownhall.au3"
 #include "functions\Image Search\checkDarkElix.au3"
 #include "functions\Image Search\checkWall.au3"
+#include "functions\Image Search\CheckXbow.au3"
 
 #include "functions\Main Screen\checkMainScreen.au3"
 #include "functions\Main Screen\checkObstacles.au3"
