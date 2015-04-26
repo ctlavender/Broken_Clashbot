@@ -123,6 +123,15 @@ Func saveConfig() ;Saves the controls settings to the config
 	EndIf
 	
 	IniWrite($config, "search2", "xbowlvl", _GUICtrlComboBox_GetCurSel($xbowlvl))
+	
+	If GUICtrlRead($chkoppwall) = $GUI_CHECKED Then
+		IniWrite($config, "search2", "chkoppwall", 1)
+	Else
+		IniWrite($config, "search2", "chkoppwall", 0)
+	EndIf
+	
+	IniWrite($config, "search2", "maxoppwall", _GUICtrlComboBox_GetCurSel($maxoppwall))
+	
 	;Attack Settings-------------------------------------------------------------------------
 	IniWrite($config, "other", "UnitD", _GUICtrlComboBox_GetCurSel($cmbUnitDelay))
 	IniWrite($config, "other", "WaveD", _GUICtrlComboBox_GetCurSel($cmbWaveDelay))

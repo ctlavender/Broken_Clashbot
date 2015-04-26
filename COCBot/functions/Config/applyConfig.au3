@@ -131,7 +131,14 @@ Func applyConfig() ;Applies the data from config to the controls in GUI
 		GUICtrlSetState($chkxbowlvl, $GUI_UNCHECKED)
 	EndIf
 	_GUICtrlComboBox_SetCurSel($xbowlvl, $xbowlevel)
-
+	
+	If $ichkoppwall = 1 Then
+		GUICtrlSetState($chkoppwall, $GUI_CHECKED)
+	Else
+		GUICtrlSetState($chkoppwall, $GUI_UNCHECKED)
+	EndIf
+	_GUICtrlComboBox_SetCurSel($maxoppwall, $imaxoppwall)
+	
 	;Attack Settings-------------------------------------------------------------------------
 	_GUICtrlComboBox_SetCurSel($cmbDeadDeploy, $deployDeadSettings)
 	_GUICtrlComboBox_SetCurSel($cmbDeadAlgorithm, $icmbDeadAlgorithm)

@@ -30,3 +30,5 @@ $RECYCLE.BIN/
 # Mac crap
 .DS_Store
 project.isn
+COC Bot.exe
+*.exe

@@ -38,7 +38,8 @@ Func readConfig() ;Reads config and sets it to the variables
 		;search2---------------------------------------------------------------------------------
 		$chkxbowlevel = IniRead($config, "search2", "chkxbowlvl", "0")
 		$xbowlevel = IniRead($config, "search2", "xbowlvl", "0")
-		
+		$ichkoppwall = IniRead($config, "search2", "chkoppwall", "0")
+		$imaxoppwall = IniRead($config, "search2", "maxoppwall", "0")
 		;Attack Settings-------------------------------------------------------------------------
 		$deployDeadSettings = IniRead($config, "attack", "deploy-dead", "0")
 		$icmbDeadAlgorithm = IniRead($config, "attack", "algorithm-dead", "0")

@@ -94,7 +94,7 @@ Global $THaddtiles, $THside, $THi
 Global $speedBump = 0
 
 ;search2 settings
-Global $chkxbowlevel ,$xbowlevel
+Global $chkxbowlevel ,$xbowlevel,$ichkoppwall,$imaxoppwall
 
 
 ;Troop types

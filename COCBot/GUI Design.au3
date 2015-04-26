@@ -150,14 +150,12 @@ $xbowlvl = GUICtrlCreateCombo("", 130, 85, 60, 21, BitOR($CBS_DROPDOWNLIST, $CBS
 GUICtrlSetData(-1, "1|2|3|4", "1")
 $chkoppwall = GUICtrlCreateCheckbox("Max Wall Level:", 20, 110 , 110, 17)
 $maxoppwall = GUICtrlCreateCombo("", 130, 110, 60, 21, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
-GUICtrlSetData(-1, "6|7|8|9|10", "7")
+GUICtrlSetData(-1, "4|5|6|7|8|9|10", "7")
 $chkairdef = GUICtrlCreateCheckbox("Max Air Defence Level:", 20, 135 , 130, 17)
 $maxairdef = GUICtrlCreateCombo("", 150, 135, 60, 21, BitOR($CBS_DROPDOWNLIST, $CBS_AUTOHSCROLL))
 GUICtrlSetData(-1, "4|5|6|7", "5")
 
 GUICtrlSetState($chkinferno, $GUI_DISABLE)
-GUICtrlSetState($chkoppwall, $GUI_DISABLE)
-GUICtrlSetState($maxoppwall, $GUI_DISABLE)
 GUICtrlSetState($chkairdef, $GUI_DISABLE)
 GUICtrlSetState($maxairdef, $GUI_DISABLE)
 

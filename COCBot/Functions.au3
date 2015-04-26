@@ -67,6 +67,7 @@
 #include "functions\Search\GetResources.au3"
 #include "functions\Search\PrepareSearch.au3"
 #include "functions\Search\VillageSearch.au3"
+#include "functions\Search\WeakBase.au3"
 
 #include "functions\Village\BoostAllBuilding.au3"
 #include "functions\Village\CheckFullArmy.au3"

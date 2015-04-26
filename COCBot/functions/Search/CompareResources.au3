@@ -195,39 +195,16 @@ Func CompareResources() ;Compares resources and returns true if conditions meet,
 			EndIf
 
 		If $conditionAnyPass Then
-			Local $xbowAnyPass = True
-			Local $THmorethannine = False
+			
+			Global $THmorethannine = False
 			SetLog("~~~~~~~Other Base Found!~~~~~~~", $COLOR_GREEN)
 			If $THL = -1 Or $THL > 2 Then
 				$THmorethannine = True
 			EndIf 
-				
-			if GUICtrlRead($chkxbowlvl) = $GUI_CHECKED and $THmorethannine Then
-				
-				for $lv = 4 to ( _GUICtrlComboBox_GetCurSel($xbowlvl) + 1 )step -1
-				SetLog("check for X-BOW level " & String($lv) , $COLOR_BLUE)
-				if checkXbow(String($lv)) Then
-					$xbowAnyPass = False
-					SetLog("Found X-BOW level " & String($lv) , $COLOR_RED)
-					ExitLoop
-				Else
-					SetLog("No X-BOW level " & String($lv) & " Found" , $COLOR_GREEN)
-				EndIf
-				
-				Next
-				if $xbowAnyPass Then
-					Return True
-				EndIf
-				
-			Else
-				if GUICtrlRead($chkxbowlvl) = $GUI_UNCHECKED Then
-					SetLog("check for X-BOW is disabled " , $COLOR_BLUE)
-				ElseIf Not $THmorethannine Then
-					SetLog("check for X-BOW is Not needed for this TH" , $COLOR_BLUE)				
-				EndIf
+			if isweakbase() Then 
 				Return True
 			EndIf
-		
+
 		EndIf
 	EndIf
 
